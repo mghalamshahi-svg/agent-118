@@ -1,0 +1,27 @@
+{
+  "name": "globallink-matching-engine",
+  "version": "0.1.0",
+  "description": "STT + intent extraction + matching microservice for the GlobalLink Trade Hub Voice Lead Marketplace. Talks to the globallink-leads WordPress plugin over REST; does not own its own database.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test test/"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5",
+    "express-rate-limit": "^7.4.0",
+    "openai": "^4.68.0",
+    "@anthropic-ai/sdk": "^0.30.1"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED",
+  "private": true
+}
